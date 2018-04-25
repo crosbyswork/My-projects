@@ -1,0 +1,136 @@
+/*
+   New Perspectives on HTML and CSS
+   Additional Cases
+   Case Problem 3
+
+   Cliff Hangers Layout Style Sheet
+
+   Filename:         home.css
+   Supporting Files: background1.png
+
+*/
+
+/* Layout styles for desktop screen display */
+
+
+
+/* Body styles */
+
+body {
+   margin: 0px;
+}
+
+div {
+   padding: 10px 20px;
+   margin: 0px auto;
+   width: 800px;
+}
+
+
+/* Horizontal navigation list styles */
+
+nav.horizontal ul {
+   list-style-type: none; 
+   text-align: center; 
+   width: 100%;
+}
+
+nav.horizontal ul li {
+   float: left; 
+   width: 16.6%; 
+   font-size: 12px; 
+   text-align: center;
+}
+
+nav.horizontal ul li a {
+   display: block; 
+   width: 100%; 
+   text-decoration: none; 
+   color: rgb(173, 89, 28);
+   border: 1px solid rgb(173, 89, 28);
+   background-color: white;
+}
+
+nav.horizontal ul li a:hover {
+   color: white; 
+   background-color: rgb(173, 89, 28);
+}
+   
+
+
+/* Section Styles */
+
+section {
+   clear: left;
+   width: 100%;
+   padding-top: 20px;
+}
+
+section p {
+   margin: 10px;
+}
+
+
+/* Figure Box styles */
+
+figure {
+   float: right;
+   margin: 15px 0px 15px 15px;
+}
+
+figure img {
+   display: block;
+   margin: 0px auto;
+}
+
+figure figcaption {
+   display: block;
+   margin-top: 10px;
+   text-align: center;
+   width: 100%;
+   font-size: 10px;
+}
+
+
+
+/* Page Background */
+
+div {
+
+   background: url(background1.png) top left no-repeat,
+               -o-linear-gradient(-45deg, rgb(223, 209, 203), rgba(255, 255, 255, 0.2) 55%);
+   background: url(background1.png) top left no-repeat,
+               -ms-linear-gradient(-45deg, rgb(223, 209, 203), rgba(255, 255, 255, 0.2) 55%);
+   background: url(background1.png) top left no-repeat,
+               -moz-linear-gradient(-45deg, rgb(223, 209, 203), rgba(255, 255, 255, 0.2) 55%);
+   background: url(background1.png) top left no-repeat,
+               -webkit-linear-gradient(-45deg, rgb(223, 209, 203), rgba(255, 255, 255, 0.2) 55%);
+   background: url(background1.png) top left no-repeat,
+               linear-gradient(-45deg, rgb(223, 209, 203), rgba(255, 255, 255, 0.2) 55%);
+
+}
+
+
+p.intro:first-letter {
+   font-size: 400%;
+   float: left;
+   margin: 0px 10px 10px 0px;
+   color: rgba(173, 89, 28, 0.8);
+   font-weight: bold;
+   font-family: 'Times New Roman', serif;
+
+  text-shadow: black 1px 1px 0px,
+               rgba(0, 0, 0, 0.3) 5px 5px 10px;
+}
+
+
+figure img {
+   -moz-border-radius: 25px;
+   -webkit-border-radius: 25px;
+   border-radius: 25px;
+
+   -moz-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+   box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+
+}

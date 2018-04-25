@@ -1,0 +1,187 @@
+/*
+   New Perspectives on HTML and CSS
+   Additional Cases
+   Case Problem 3
+
+   Cliff Hangers Layout Style Sheet
+
+   Filename:         chlayout.css
+   Supporting Files: 
+
+*/
+
+/* Layout styles for desktop screen display */
+
+
+
+/* Body styles */
+
+body {
+   margin: 0px;
+}
+
+div {
+   padding: 10px 20px;
+   margin: 0px auto;
+   width: 800px;
+}
+
+
+
+/* Page Background */
+
+div {
+   background: url(background4.png) top left no-repeat,
+               -o-linear-gradient(-45deg, rgb(210, 200, 200) 20%, rgba(255, 255, 255, 0.2) 35%);
+   background: url(background4.png) top left no-repeat,
+               -ms-linear-gradient(-45deg, rgb(210, 200, 200) 20%, rgba(255, 255, 255, 0.2) 35%);
+   background: url(background4.png) top left no-repeat,
+               -moz-linear-gradient(-45deg, rgb(210, 200, 200) 20%, rgba(255, 255, 255, 0.2) 35%);
+   background: url(background4.png) top left no-repeat,
+               -webkit-linear-gradient(-45deg, rgb(210, 200, 200) 20%, rgba(255, 255, 255, 0.2) 35%);
+   background: url(background4.png) top left no-repeat,
+               linear-gradient(-45deg, rgb(210, 200, 200) 20%, rgba(255, 255, 255, 0.2) 35%);
+
+}
+
+
+/* Horizontal navigation list styles */
+
+nav.horizontal ul {
+   list-style-type: none; 
+   text-align: center; 
+   width: 100%;
+}
+
+nav.horizontal ul li {
+   float: left; 
+   width: 16.6%; 
+   font-size: 12px; 
+   text-align: center;
+}
+
+nav.horizontal ul li a {
+   display: block; 
+   width: 100%; 
+   text-decoration: none; 
+   color: rgb(173, 89, 28);
+   border: 1px solid rgb(173, 89, 28);
+   background-color: white;
+}
+
+nav.horizontal ul li a:hover {
+   color: white; 
+   background-color: rgb(173, 89, 28);
+}
+
+
+/* Vertical Navigation List */
+
+nav.vertical {
+   width: 150px;
+   float: left;
+}
+
+nav.vertical ul {
+   list-style-type: none;
+   margin: 0px 20px 10px 0px;
+   padding-left: 0px;
+}
+
+nav.vertical ul li {
+   display: block;
+   width: 100%;
+   color: white;
+   font-size: 10px;
+   margin: 0px 0px 1px 1px;
+   padding: 3px;
+   background-color: rgb(173, 89, 28);
+}
+
+nav.vertical ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+nav.vertical ul li a:hover {
+   color: yellow;
+}
+
+
+/* Section Styles */
+
+section {
+   clear: left;
+   width: 100%;
+   padding-top: 20px;
+}
+
+section p {
+   margin: 10px;
+}
+
+
+h1 {
+   font-size: 200%;
+   letter-spacing: 10px;
+   font-weight: normal;
+   color: rgb(173, 89, 28);
+}
+
+
+h2 {
+   font-size: 120%;
+   color: rgb(173, 89, 28);
+   letter-spacing: 3px;
+}
+
+
+
+section table {
+   border-collapse: collapse;
+   border: 1px solid black;
+   margin: 10px;
+   width: 90%;
+}
+
+section th, section td {
+   border: 1px solid black;
+   padding: 5px;
+}
+
+section th {
+   text-align: left;
+   font-weight: normal;
+   background-color: rgb(255, 170, 110);
+   width: 70px;
+}
+
+
+article {
+   width: 47%;
+   float: left;
+   margin-right: 1.5%;
+}
+
+footer {
+   clear: left;
+}
+
+
+figure {
+   float: right; 
+   margin: 5px;
+   width: 80px;
+}
+
+figure img {
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+
+   -moz-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+   box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+
+}
+

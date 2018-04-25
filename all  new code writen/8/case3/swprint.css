@@ -1,0 +1,73 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   SkyWeb Print Styles
+   Author:David Crosby
+   Date:   3/1/2017
+
+   Filename:         swprint.css
+   Supporting Files: 
+
+*/
+
+
+@page {
+   size: 8.5in 11in portrait; 
+   margin: 0.5in;
+}
+
+/* Hide page elements that will not be printed */
+
+nav, footer {
+
+   display: none;
+}
+
+
+
+header img {
+   position: fixed;
+   top: 0in;
+   left: 2in;
+}
+
+article {
+   padding-top: 1.5in;
+   page-break-inside: avoid;
+   page-break-after: always;
+}
+
+
+article p {
+   font-size: 13pt;
+   margin: 0.2in;
+}
+
+
+section#left h1 {
+   font-size: 28pt;
+   text-align: center;
+}
+
+section#right h1 {
+   font-size: 24pt;
+}
+
+section#right img {
+   display: block;
+   margin: 0.5in auto;
+   width: 4in;
+}
+
+a {
+   color: black;
+   font-style: italic;
+}
+
+a:after {
+   content: " (" attr(href) ") ";
+}
+
+

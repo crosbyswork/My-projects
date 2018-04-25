@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 8
+      Case Problem 4
+
+      Browyer Realty
+      Author: David Crosby
+      Date:   3/1/2017
+
+      Filename:         browyer.htm
+      Supporting files: brbase.css, breffects.css, brlayout.css,
+                        brlogo.png, brmobile.css, brprint.css
+                        imag01.jpg - img09.jpg, modernizer-1.5.js
+      -->
+
+      <title>Browyer Realty</title>
+
+      <script src="modernizr-1.5.js"></script>
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width,
+                                     initial-scale=1.0, maximum-scale=1.0" />
+
+      <script src="modernizr-1.5.js"></script>
+
+      
+      <link href="brbase.css" rel="stylesheet" />
+      <link href="brlayout.css" rel="stylesheet" media="screen and (min-width: 501px)" />
+      <link href="breffects.css" rel="stylesheet" media="screen and (min-width: 501px)" />
+
+      <!-- Style sheet links for Internet Explorer prior to Version 9 -->
+      <!--[if lt IE 9]>
+         <link href="brlayout.css" rel="stylesheet" media="screen" />
+         <link href="breffects.css" rel="stylesheet" media="screen" />
+      <![endif]-->
+
+      <link href="brprint.css" rel="stylesheet" media="print" />
+      <link href="brmobile.css" rel="stylesheet" media="only screen and (max-width: 500px)" />
+
+   </head>
+
+   <body>
+      <header>
+         <img src="brlogo.png" alt="Browyer Realty" />
+      </header>
+
+      <nav class="vertical">
+         <ul>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Residential</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Rentals</a></li>
+            <li><a href="#">Appraisals</a></li>
+            <li><a href="#">Contact Us</a></li>
+      </nav>
+
+      <section id="main">
+
+         <img src="img01.jpg" alt="" id="bkimg" />
+
+
+         <section id="center">
+  
+            <article>
+
+               <h1>Listing 2048</h1>
+
+               <p>Paradise found! This custom-built brand new home sits proudly 
+                  on a 6.8-acre high wooded site overlooking a 300-acre nature 
+                  conservancy. The setting is exceptional, and the home is 
+                  every bit as exciting! A bright, open layout is 
+                  enhanced by vaulted ceilings, hardwood and tumbled, ceramic 
+                  flooring, custom maple cabinetry, upgraded fixtures, numerous 
+                  windows, and incredible views.
+               </p>
+               <p>There is much more. The property includes a 40x54 storage 
+                  building - perfect for a large boat and machinery. An exposed 
+                  walkout on lower level leads down to
+                  a beautiful wooded area.
+               </p>
+               <p>An extra bathroom, bedroom, and family room can be added to 
+                  the unfinished basement for more living space.   
+               </p>
+            </article>
+         </section>
+
+         <section id="right">
+
+            <address>
+               <h1>Address</h1>
+               <p>414 Mandel Road<br />
+                  Owatonna, MN  55060
+               </p>
+            </address>
+
+            <table>
+               <tr>
+                  <th>List Price</th>
+                  <td>$393,500</td>
+               </tr>
+               <tr>
+                  <th>Square Feet</th>
+                  <td>3,300</td>
+               </tr>
+               <tr>
+                  <th>Bedrooms</th>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <th>Baths</th>
+                  <td>2 1/2</td>
+               </tr>
+            </table>
+
+            <aside>
+               <figure>
+                  <img src="img01.jpg" alt="" />
+                  <figcaption>Front View</figcaption>
+               </figure>
+               <figure>
+                  <img src="img02.jpg" alt="" />
+                  <figcaption>Rear View</figcaption>
+               </figure>
+               <figure>
+                  <img src="img03.jpg" alt="" />
+                  <figcaption>Side View</figcaption>
+               </figure>
+               <figure>
+                  <img src="img04.jpg" alt="" />
+                  <figcaption>Dining Room</figcaption>
+               </figure>
+               <figure>
+                  <img src="img05.jpg" alt="" />
+                  <figcaption>Kitchen</figcaption>
+               </figure>
+               <figure>
+                  <img src="img06.jpg" alt="" />
+                  <figcaption>Living Room</figcaption>
+               </figure>
+               <figure>
+                  <img src="img07.jpg" alt="" />
+                  <figcaption>Bedroom 1</figcaption>
+               </figure>
+               <figure>
+                  <img src="img08.jpg" alt="" />
+                  <figcaption>Bedroom 2</figcaption>
+               </figure>
+               <figure>
+                  <img src="img09.jpg" alt="" />
+                  <figcaption>Bedroom 3</figcaption>
+               </figure>
+            </aside>
+
+         </section>
+
+         <nav class="horizontal">
+            <ul>
+               <li><a href="#">More Details</a></li>
+               <li><a href="#">Map</a></li>
+               <li><a href="#">Request a Showing</a></li>
+               <li><a href="#">Other Listings</a></li>
+            </ul>
+         </nav>
+
+         <footer>
+               Browyer Realty
+               <span>
+                  <a href="#">About</a>
+                  <a href="#">Privacy</a>
+                  <a href="#">Contact Us</a>
+                  <a href="#">Help</a>
+               </span>
+         </footer>
+
+      </section>
+
+   </body>
+</hml>

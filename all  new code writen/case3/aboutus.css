@@ -1,0 +1,109 @@
+/*
+   New Perspectives on HTML and CSS
+   Additional Cases
+   Case Problem 3
+
+   Cliff Hangers Layout Style Sheet
+
+   Filename:         chlayout.css
+   Supporting Files: 
+
+*/
+
+/* Layout styles for desktop screen display */
+
+
+
+/* Body styles */
+
+body {
+   margin: 0px;
+}
+
+div {
+   padding: 10px 20px;
+   margin: 0px auto;
+   width: 800px;
+}
+
+
+
+/* Page Background */
+
+div {
+   background: url(background5.png) top right no-repeat,
+               -o-linear-gradient(-135deg, rgb(220, 200, 200) 30%, rgba(255, 255, 255, 0.2) 40%);
+   background: url(background5.png) top right no-repeat,
+               -ms-linear-gradient(-135deg, rgb(220, 200, 200) 30%, rgba(255, 255, 255, 0.2) 40%);
+   background: url(background5.png) top right no-repeat,
+               -moz-linear-gradient(-135deg, rgb(220, 200, 200) 30%, rgba(255, 255, 255, 0.2) 40%);
+   background: url(background5.png) top right no-repeat,
+               -webkit-linear-gradient(-135deg, rgb(220, 200, 200) 30%, rgba(255, 255, 255, 0.2) 40%);
+   background: url(background5.png) top right no-repeat,
+               linear-gradient(-135deg, rgb(220, 200, 200) 30%, rgba(255, 255, 255, 0.2) 40%);
+
+
+}
+
+
+
+/* Horizontal navigation list styles */
+
+nav.horizontal ul {
+   list-style-type: none; 
+   text-align: center; 
+   width: 100%;
+}
+
+nav.horizontal ul li {
+   float: left; 
+   width: 16.6%; 
+   font-size: 12px; 
+   text-align: center;
+}
+
+nav.horizontal ul li a {
+   display: block; 
+   width: 100%; 
+   text-decoration: none; 
+   color: rgb(173, 89, 28);
+   border: 1px solid rgb(173, 89, 28);
+   background-color: white;
+}
+
+nav.horizontal ul li a:hover {
+   color: white; 
+   background-color: rgb(173, 89, 28);
+}
+
+
+
+
+/* Section Styles */
+
+section {
+   clear: left;
+   width: 100%;
+   padding-top: 20px;
+}
+
+section p {
+   margin: 10px;
+}
+
+
+h1 {
+   font-size: 200%;
+   letter-spacing: 10px;
+   font-weight: normal;
+   color: rgb(173, 89, 28);
+}
+
+
+
+
+section ul {
+   margin-left: 50px;
+   list-style-type: circle;
+}
+

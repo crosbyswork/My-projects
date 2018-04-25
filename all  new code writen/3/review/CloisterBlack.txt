@@ -1,0 +1,10 @@
+@font-face {
+   font-family: 'CloisterBlack';
+   src: url('CloisterBlack.eot');
+   src: local('?'), 
+        url('CloisterBlack.woff') format('woff'), 
+        url('CloisterBlack.ttf') format('truetype'), 
+        url('CloisterBlack.svg#cloister') format('svg');
+}
+
+/* Dieter Steffmann fonts are not licensed and are considered freeware. Full repository of Dieter's fonts can be found here: http://moorstation.org/typoasis/designers/steffmann/index.htm */

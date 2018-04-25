@@ -1,0 +1,130 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case 4
+
+   Mobile Styles
+   Author: David Crosby
+   Date:   3/1/2014
+
+   Filename:         brmobile.css
+   Supporting Files: 
+
+*/
+
+/* Styles to be used with mobile devices */
+
+
+/* Hide page elements that will not be displayed */
+
+nav, footer, #bkimg {
+   display: none;
+}
+
+
+body {
+   margin: 0px 10px;
+}
+
+
+/* Header styles */
+
+header img {
+   width: 100%;
+}
+
+article {
+   width: 100%;
+}
+
+article h1 {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+article p {
+   font-size: 12px;
+   margin: 10px 0px;
+}
+
+address {
+   font-style: normal;
+   font-size: 12px;
+   margin: 10px 0px;
+}
+
+address h1 {
+   font-weight: bold;
+}
+
+table {
+   border-collapse: collapse;
+   1px solid black;
+   margin: 10px 0px;
+}
+
+th {
+   font-weight: normal;
+   text-align: left;
+   border: 1px solid black;
+   font-size: 12px;
+}
+
+td {
+   border: 1px solid black;
+   font-size: 12px;
+   text-align: right;
+}
+
+
+
+/* Figure box caption styles */
+
+figure figcaption {
+   font-size: 12px;
+   text-align: center;
+}
+
+
+/* Mobile styles under portrait orientation */
+
+@media screen and (orientation: portrait) {
+
+
+   /* Figure box styles */
+
+   figure {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   figure img {
+      width: 90%;
+   }
+
+}
+
+
+/* Mobile styles under landscape orientation */
+
+@media screen and (orientation: landscape) {
+
+
+   /* Figure box styles */
+
+   figure {
+      width: 33%;
+      float: left;
+      margin-bottom: 20px;
+   }
+
+   figure img {
+      width: 90%;
+   }
+
+}
+
+
+
+
+

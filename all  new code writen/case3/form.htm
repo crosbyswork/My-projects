@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Additional Cases
+      Case Problem 3
+
+      Cliff Hangers Survey Form
+      Author: David Crosby
+   Date:   3/1/2017
+
+
+      Filename:         form.htm
+      Supporting files: background6.png, chlogo.png, form.css,
+                        modernizr-1.5.js
+                        
+
+   -->
+
+      <meta charset="UTF-8" />
+
+      <title>Cliff Hangers Climbing School Application Form</title>
+      <script src="modernizr-1.5.js"></script>
+      <script src="formsubmit.js"></script>
+      
+      <link href="chbase.css" rel="stylesheet" />
+      <link href="form.css" rel="stylesheet" />
+
+
+   </head>
+
+   <body>
+   <div>
+      <header>
+         <img src="chlogo.png" alt="Cliff Hangers Climbing School" />
+         <nav class="horizontal">
+            <ul>
+               <li><a href="home.htm">Home</a><li>
+               <li><a href="lessons.htm">Lessons</a><li>
+               <li><a href="tours.htm">Tours</a><li>
+               <li><a href="staff.htm">Staff</a><li>
+               <li><a href="form.htm">Survey</a><li>
+               <li><a href="aboutus.htm">About Us</a><li>
+            </ul>
+         </nav>
+      </header>
+
+      <section>
+         <h1>Survey Form</h1>
+         <p>Contact us today for more information about Cliff Hangers and to schedule
+            a tour. Required information is indicated by an asterisk (*).
+         </p>
+
+      <form id="survey" name="survey"
+            action="http://www.cliffhangerschool.com/survey"
+            method="post">
+
+         <fieldset id="custInfo">
+            <legend>Personal Information</legend>
+
+            <label for="custname">Name *</label>
+            <input name="custname" id="custname"
+                   placeholder="first and last name"
+                   required="required" />
+
+            <label for="email">E-mail *</label>
+            <input name="email" id="email" type="email" 
+                   required="required" />
+
+            <label>Where did you hear about us? <br />(select all that apply)</label>
+            <select name="infoSrc" id="infoSrc" size="5" multiple="multiple">
+               <option value="internet">Internet</option>
+               <option value="mag">Magazine</option>
+               <option value="news">Newspaper</option>
+               <option value="word">Word of mouth</option>
+               <option value="other">Other</option>
+            </select>
+
+            <label for="experience">
+               How many years have you been climbing?
+            </label>
+            <input name="experience" id="experience" 
+                   type="number" value="0"
+                   min="0" max="10" step="1" />
+
+            <label for="interest">Climbing Interest</label>
+            <select name="interest" id="interest">
+               <option value="beginner">Beginner skills</option>
+               <option value="intermediate">Intermediate skills</option>
+               <option value="advanced">Advanced skills</option>
+               <option value="aid">Aid climbing</option>
+               <option value="ice">Ice climbing</option>
+            </select>
+
+            <label>I'm interested in:</label>
+            <fieldset class="optionGroup">
+               <label for= "lessons">Lessons only</label>
+               <input type="radio" name="custType" id="lessons"
+                      value="lessons" />
+               <label for= "tours">Tours only</label>
+               <input type="radio" name="custType" id="tours"
+                      value="tours" />
+               <label for= "both">Both tours and lessons</label>
+               <input type="radio" name="custType" id="both"
+                      value="both" />
+            </fieldset>
+
+            <label for= "comments ">Tell us about your climbing goals</label>
+            <textarea name="comments" id="comments"></textarea>
+
+         <label id="newsletter">
+            <input type="checkbox" name="elist" />
+            Please add me to the Cliff Hangers e-mail list.
+         </label>
+
+         <p>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Cancel" />
+         </p>
+         </fieldset>
+
+      </form>
+
+      </section>
+
+   </div>
+   </body>
+
+</html>

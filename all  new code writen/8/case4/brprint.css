@@ -1,0 +1,103 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case 4
+
+   Print Styles
+   Author: David Crosby
+   Date:   3/1/2017
+
+   Filename:         brprint.css
+   Supporting Files: 
+
+*/
+
+
+@page {
+   size: 8.5in 11in portrait;
+   margin: 0.5in;
+}
+
+
+/* Styles to be used for print displays */
+
+
+
+/* Hide page elements that will not be printed */
+
+nav, footer, #bkimg {
+   display: none;
+}
+
+
+
+/* Setting the page breaks in the document */
+
+article {
+   display: block;
+   page-break-after: always;
+   page-break-inside: avoid;
+}
+
+
+
+/* Styles for the h1 heading */
+
+article h1 {
+   font-size: 28pt;
+   width: 100%;
+}
+
+/* Address Styles */
+
+address {
+   font-style: normal;
+}
+
+p {
+   font-size: 14pt;
+   margin: 0in 0in 0.2in 0in;
+}
+
+
+table {
+   border-collapse: collapse;
+   border: 1px solid black;
+   page-break-after: always;
+}
+
+table th {
+   font-weight: normal;
+   text-align: left;
+   border: 1px solid black;
+}
+
+table td {
+   border: 1px solid black;
+}
+
+
+
+
+/* Styles for the figure boxes */
+
+figure {
+   display: block;
+   text-align: center;
+   page-break-after: always;
+   page-break-inside: avoid;
+}
+
+
+figure img {
+   width: 100%;
+}
+
+figure figcaption {
+   font-size: 20pt;
+}
+
+
+figure:last-of-type {
+   page-break-after: avoid;
+}

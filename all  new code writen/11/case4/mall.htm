@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 11
+      Case Problem 4
+
+      The Cutler Shopping Mall
+      Author: David Crosby
+      Date:   3/1/2017
+
+      Filename:         mall.htm
+      Supporting files: clock.js, logo.jpg, mall.css, mall1.png, 
+                        mall2.png, mall3.png, modernizr-1.5.js, 
+                        time.js
+
+      Usage Notes
+            mall1.png
+            Shutterstock Photo:
+            Crowd in the mall (motion blurred)
+            Image ID: 42935725
+            Release  information: N/A   
+            Copyright: Dmitrijs Dmitrijevs
+            Not available for use other than with this publication
+
+            mall2.png
+            Shutterstock Photo:
+            Portrait of happy woman looking through new collection in clothing department
+            Image ID: 85185442
+            Release  information:
+            Signed model release filed with Shutterstock Images LLC
+            Copyright: Dmitriy Shironosov
+            Not available for use other than with this publication
+
+            mall3.png
+            Shutterstock Photo:
+            Portrait of happy woman looking through new collection in clothing department
+            Image ID: 85185442
+            Release  information:
+            Signed model release filed with Shutterstock Images LLC
+            Copyright: Dmitriy Shironosov
+            Not available for use other than with this publication
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>The Cutler Shopping Mall</title>
+      <script src="modernizr-1.5.js" type="text/javascript" ></script>
+
+      <link href="mall.css" rel="stylesheet" type="text/css" />
+
+      <script type="text/javascript" src="time.js"></script>
+
+      <script type="text/javascript">
+
+         function countDownClock() {
+            // the today variable contains the current date and time
+               var today = new Date();
+   
+            // the date and time of the mall opening
+               var opening = new Date("March 23, 2015 09:00:00");
+
+            // calculate the current year
+               thisYear = today.getFullYear();
+               opening.setFullYear(thisYear);
+
+               openingYear = (opening - today) < 0 ? thisYear+1 : thisYear;
+               opening.setFullYear(openingYear);
+
+               document.mallclock.dayNow.value=showDate(today);
+               document.mallclock.timeNow.value=showTime(today);
+
+               document.mallclock.days.value=daysDiff(today, opening);
+               document.mallclock.hours.value=hoursDiff(today, opening);
+               document.mallclock.minutes.value=minutesDiff(today, opening);
+         }     
+
+      </script>
+
+   </head>
+
+   <body onload="countDownClock();setInterval('countDownClock()', 60000)">
+   <div id="page">
+   <form name="mallclock" id="mallclock" action="">
+
+   <div id="logo">
+      <img src="logo.jpg" alt="Cutler Shopping Mall" style="float: left" /> 
+
+      <div id="clock">
+         <label id="now">Current Date and Time</label>
+         <input type="text" id="dayNow" name="dayNow" size="15" />
+         <input type="text" id="timeNow" name="timeNow" size="12" />
+         <br /><br />
+         <label id="countdown">Countdown to Opening</label>
+         <input type="text" id="days" name="days" size="4" />
+         <label for="days">days</label>
+
+         <input type="text" id="hours" name="hours" size="3" />
+         <label for="hours">hr.</label>
+
+         <input type="text" id="minutes" name="minutes" size="3" />
+         <label for="minutes">min.</label>
+      </div>
+
+   </div>
+
+   <ul id="links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Store Directory</a></li>
+      <li><a href="#">Gift Ideas</a></li>
+      <li><a href="#">Mall Gift Cards</a></li>
+      <li><a href="#">Special Events</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Security</a></li>
+      <li><a href="#">Leasing</a></li>
+      <li><a href="#">Sponsorships</a></li>
+      <li><a href="#">Contact Us</a></li>
+   </ul>
+
+   <div id="pageContent">
+
+      <h2>Opening Soon!</h2>
+
+      <p><img src="mall3.png" alt="" style="float: right; margin: 0px 0px 5px 5px" />
+         The Cutler Shopping Mall is planning a GRAND grand opening with 
+         great sales,contests, family fun events, and more surprises. Plan 
+         to join us on March 23rd at 9am for this special event!</p>
+
+
+      <h2>About the Mall</h2>
+
+      <p>Cutler Mall is home to your favorite stores like Boston Store, JCPenney, 
+         and Sears. We feature more than 110 specialty stores including Aveda, 
+         Williams-Sonoma, Banana Republic, Express, Ann Taylor, Abercrombie &amp; Fitch, 
+         and American Eagle Outfitters. New specialty stores include Pottery Barn, 
+         Coldwater Creek, Hollister Co., Abercrombie, Aeropostale, Weathervane, 
+         Helzberg Diamonds, and Godiva Chocolatier.</p>
+
+      <p>The Mall has 24 delicious eateries, a family playground, Internet Kiosk, and
+         baby-sitting facilities; making a visit to the Cutler Mall a true 
+         shopping experience.</p>
+
+      <h3>Mall Hours</h3>
+      <ul>
+         <li>Monday - Saturday: 10am - 9pm</li>
+         <li>Sunday: 11am - 6pm</li>
+      </ul>
+
+      <address>
+         The Cutler Mall &#183;
+         20050 Enterprise Avenue &#183;
+         Cutler, IA 43109 &#183;
+         (281) 555-9081
+      </address>
+
+   </div>
+
+   </form>
+   </div>
+</body>
+</html>

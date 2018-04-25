@@ -1,0 +1,87 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case 4
+
+   Special Effects style sheet
+   Author: David Crosby
+   Date:   3/1/2017
+
+   Filename:         breffects.css
+   Supporting Files: 
+
+*/
+
+
+
+/* Heading text style */
+
+section#main h1 {
+  color: rgb(0, 0, 127);
+  text-shadow: white 2px 2px 0px,
+               rgba(0, 0, 127, 0.9) 5px 5px 10px;
+}
+
+
+/* Main Section Styles */
+
+section#main {
+   background: -o-linear-gradient(top left, rgb(51, 51, 151), white 40%); 
+   background: -ms-linear-gradient(top left, rgb(51, 51, 151), white 40%); 
+   background: -moz-linear-gradient(top left, rgb(51, 51, 151), white 40%); 
+   background: -webkit-linear-gradient(top left, rgb(51, 51, 151), white 40%); 
+   background: linear-gradient(top left, rgb(51, 51, 151), white 40%);
+
+}
+
+
+/* Box shadow styles */
+
+figure img {
+
+   -moz-border-radius: 25px;
+   -webkit-border-radius: 25px;
+   border-radius: 25px;
+
+   -moz-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+   box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+}
+
+
+
+address, aside, table {
+   -moz-box-shadow: black 5px 5px 5px;
+   -webkit-box-shadow: black 5px 5px 5px;
+   box-shadow: black 5px 5px 5px;
+}
+
+
+/* Rotate styles */
+
+nav.vertical li {
+
+   -o-transform: rotate(-30deg);
+   -moz-transform: rotate(-30deg);
+   -webkit-transform: rotate(-30deg);
+   -ms-transform: rotate(-30deg);
+   transform: rotate(-30deg);  
+}
+
+/* opacity styles */
+
+#bkimg {
+   opacity: 0.25;
+}
+
+
+body {
+   height: 660px;
+   -moz-box-shadow: rgba(0, 0, 51, 0.6) 20px 0px 10px,
+                    rgba(0, 0, 51, 0.6) -20px 0px 10px;
+   -webkit-box-shadow: rgba(0, 0, 51, 0.6) 20px 0px 10px,
+                    rgba(0, 0, 51, 0.6) -20px 0px 10px;
+   box-shadow: rgba(0, 0, 51, 0.6) 20px 0px 10px,
+                    rgba(0, 0, 51, 0.6) -20px 0px 10px;
+
+}

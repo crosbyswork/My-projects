@@ -1,0 +1,44 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 12
+   Case Problem 4
+
+   Author:   David Crosby
+   Date:     3/1/2017
+
+   Filename: calendar.css
+
+   This file contains styles applied to the lunar calendar table
+*/
+
+#calendar_table {
+    background-color: black;
+    border-style: outset;
+    border-width: 5px;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calendar_head {
+    background-color: black;
+    color: white;
+}
+
+.calendar_weekdays {
+    border-bottom-style: solid;
+    font-size: 12px;
+    width: 70px;
+}
+
+.calendar_dates {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    vertical-align: bottom;
+    height: 70px;
+    width: 70px;
+}
